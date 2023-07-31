@@ -8,6 +8,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+
+/*
+useBean 사용시 컨트롤러대신
+html->jsp -> 계산기dto->jsp 순..
+
+ */
+
 @WebServlet("/calcControl")
 public class CalcController extends HttpServlet {
     private static final long serialVersionUID = 1L;
