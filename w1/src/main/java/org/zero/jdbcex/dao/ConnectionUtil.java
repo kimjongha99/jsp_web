@@ -18,7 +18,7 @@ public enum ConnectionUtil {
         config.setDriverClassName("com.mysql.cj.jdbc.Driver");
         config.setJdbcUrl("jdbc:mysql://localhost:3306/webdb");
         config.setUsername("root");
-        config.setPassword("rlawhdgk99");
+        config.setPassword("password");
         config.addDataSourceProperty("cachePrepStmts", "true");
         config.addDataSourceProperty("prepStmtCacheSize", "250");
         config.addDataSourceProperty("prepStmtCacheSqlLimit", "2048");
