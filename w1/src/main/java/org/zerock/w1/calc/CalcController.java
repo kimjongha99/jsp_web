@@ -29,7 +29,7 @@ public class CalcController extends HttpServlet {
             case "*": result = n1*n2;break;
         }
         request.setAttribute("result", result);
-        getServletContext().getRequestDispatcher("/calc/calcResult.jsp").forward(request, response);
+        getServletContext().getRequestDispatcher("/calc/calc.jsp").forward(request, response);
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
