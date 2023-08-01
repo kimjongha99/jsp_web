@@ -14,10 +14,16 @@ import java.util.List;
 @Log4j2
 public class TodoListController extends HttpServlet {
     private TodoService todoService = TodoService.INSTANCE;
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         log.info("todo list..................");
+
+        ServletContext servletContext = req.getServletContext();
+
+        log.info("appName:  "  + servletContext.getAttribute("appName"));
+
 
         try {
             List<TodoDTO> dtoList = todoService.listAll();
