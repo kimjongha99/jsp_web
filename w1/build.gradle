@@ -22,11 +22,9 @@ tasks.withType(JavaCompile) {
 }
 
 dependencies {
-    implementation 'com.github.yangtu222:BeanUtils:1.0.11'
     implementation 'commons-beanutils:commons-beanutils:1.9.4'
-    implementation 'commons-beanutils:commons-beanutils:1.9.4'
-    implementation 'commons-beanutils:commons-beanutils:1.9.4'
-    implementation 'commons-beanutils:commons-beanutils:1.9.4'
+
+
     compileOnly('javax.servlet:javax.servlet-api:4.0.1')
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
@@ -51,7 +49,15 @@ dependencies {
     testAnnotationProcessor group: 'org.projectlombok', name: 'lombok', version: '1.18.22'
 
     implementation group: 'jstl', name: 'jstl', version: '1.2'
-}
+
+    implementation 'org.glassfish.jersey.containers:jersey-container-servlet:2.33'
+    implementation 'org.glassfish.jersey.inject:jersey-hk2:2.33'
+    implementation 'org.glassfish.jersey.media:jersey-media-json-jackson:2.33'
+
+    }
+
+
+
 
 test {
     useJUnitPlatform()
